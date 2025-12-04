@@ -99,7 +99,40 @@ const checkbox=document.getElementById('tableselector')
 checkbox.addEventListener('change',changeCheckbox)
 
 const htmlform=document.getElementById('htmlform')
-htmlform.addEventListener('submit',addEventListener)
+htmlform.addEventListener('submit',function(e){
+    e.preventDefault()
+    const a=e.target
+    const stelepules=a.querySelector('#elso')
+    const sagazat=a.querySelector('#masodik')
+    const spelda1=a.querySelector('#harmadik')
+    const spelda2=a.querySelector('#negyedik')
+
+
+    const obj={}
+    obj.telepules=stelepules.value
+    obj.pelda1=spelda1.value
+    obj.pelda2=spelda2.value
+    obj.agazat=sagazat.value
+
+    const tbody=document.getElementById('tbody')
+    const tr = document.createElement("tr")
+    const td1 = document.createElement("td")
+    const td2 = document.createElement("td")
+    const td3 = document.createElement("td")
+    const td4 = document.createElement("td")
+
+    tbody.appendChild(tr)
+    
+    td1.innerText=obj.telepules
+    td2.innerText=obj.agazat
+    td3.innerText=obj.pelda1
+    td4.innerText=obj.pelda2
+
+    tr.appendChild(td1)
+    tr.appendChild(td2)
+    tr.appendChild(td3)
+    tr.appendChild(td4)
+})
 
 
 //-------------Functions-------------

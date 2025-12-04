@@ -30,7 +30,7 @@
                     <th colspan="2">Példa</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="tbody">
                 <tr>
                     <td>Athén</td>
                     <td>politika</td>
@@ -60,34 +60,30 @@
                 </tr>
             </tbody>
         </table>
-        <div>
-            <label>Ókori település:</label>
-            <input type="text" id="elso" name="telepules"><br>
-            <span class="error"></span>
-        </div>
-        <div>
-            <label>Ágazat:</label>
-            <input type="text" id="masodik" name="agazat"><br>
-            <span class="error"></span>
-        </div>
-        <div>
-            <label>Ágazat2:</label>
-            <input type="text" id="harmadik" name="agazat2"><br>
-            <span class="error"></span>
-        </div>
-        <div>
-            <label>Példa:</label>
-            <input type="text" id="negyedik" name="pelda"><br>
-            <span class="error"></span>
-        </div>
-        <div>
-            <label>Példa2:</label>
-            <input type="text" id="otodik" name="pelda2"><br>
-            <span class="error"></span>
-        </div>
-            <form id="htmlform">
-                <button type="submit">Küldés</button>
-            </form>
+        
+        <form id="htmlform">
+            <div>
+                <label>Ókori település:</label>
+                <input type="text" id="elso" name="telepules"><br>
+                <span class="error"></span>
+            </div>
+            <div>
+                <label>Ágazat:</label>
+                <input type="text" id="masodik" name="agazat"><br>
+                <span class="error"></span>
+            </div>
+            <div>
+                <label>Példa:</label>
+                <input type="text" id="harmadik" name="pelda"><br>
+                <span class="error"></span>
+            </div>
+            <div>
+                <label>Példa2:</label>
+                <input type="text" id="negyedik" name="pelda2"><br>
+                <span class="error"></span>
+            </div>
+            <button type="submit">Küldés</button>
+        </form>
     </div>
     <script src="index.js"></script>
 </body>
